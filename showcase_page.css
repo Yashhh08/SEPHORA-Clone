@@ -1,0 +1,115 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+#content {
+  margin: 25px;
+  padding: 25px;
+}
+
+#container {
+  height: 500px;
+}
+
+#container > div {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}
+
+#container > div > img {
+  width: 30%;
+  margin-left: 200px;
+}
+
+#info_div {
+  width: 35%;
+  padding: 20px;
+}
+
+#important {
+  border: 2px solid rgb(255, 123, 0);
+  padding: 10px;
+}
+
+#box {
+  width: 38%;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: 55px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+#ad {
+  cursor: pointer;
+}
+
+#addtobag {
+  background-color: rgb(245, 43, 154);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#icon {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin: auto;
+}
+
+#icon > div {
+  width: 70px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  margin: auto;
+  background-color: rgb(236, 230, 230);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#ad_img > img {
+  height: 400px;
+  width: 100%;
+}
+
+#similar_product_div {
+  margin: auto;
+  text-align: center;
+}
+
+#similar_product {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+}
+.button{
+  border: 2px solid black;
+  padding: 5px 15px;
+  background-color: white;
+}
+.button_input{
+  background-color: #F3F3F3;
+  border: none;
+  padding: 9px;
+}
+.button_input:focus{
+  outline: none;
+
+}
+.button_input:-webkit-outer-spin-button,:-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}

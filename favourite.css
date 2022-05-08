@@ -1,0 +1,23 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+#text_fav {
+  background-color: rgb(24, 167, 233);
+  text-align: center;
+  padding: 1px;
+}
+
+.my_fav {
+  color: white;
+  font-size: 25px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+}
