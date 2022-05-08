@@ -1,0 +1,121 @@
+.background-body{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    position: absolute;
+    /* display: none; */
+    padding: 10px;
+}
+.contains-form{
+    width:330px;
+    height:490px;
+    background-color: white;
+    border-radius:1px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: sans-serif;
+    margin: auto;
+    overflow: auto;
+    
+}
+.contains-form::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgb(196, 194, 194);
+}
+.contains-form::-webkit-scrollbar-track{
+    background-color: rgb(196, 194, 194);
+}
+.contains-form::-webkit-scrollbar-thumb{
+    background-color: rgb(166, 164, 164);
+}
+h1{
+    font-size: 39px;
+    line-height: -19px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    margin-bottom: -5px;
+}
+.previous-page{
+    position: absolute;
+    top: 0;
+    left:26px;
+    color:rgb(255,51,153) ;
+    margin-top: 28px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transform: rotate(45deg);
+    font-weight: 900;
+   
+}
+.input-label{
+    font-weight: 100; 
+    font-size: smaller;
+    color: rgb(185, 185, 185);
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 13px;
+}
+.name-field-select{
+    display: flex;
+}
+#div-input-label{
+    border:2px solid rgb(234,0,32);
+    height: 40px;
+}
+.input-with-select{
+    font-size: 19px;
+position: relative;
+width: 78%;
+border: none;
+height: 34px;
+margin-top: 2px;
+outline: none;
+}
+select{
+    border:none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2px;
+    margin-top: 13px;
+    margin-left: 2px;
+    outline: none;
+}
+input{
+    
+    display: block;
+    margin: 0 auto;
+   
+    width: 97.5%;
+    height: 40px;
+    border:2px solid rgb(234,0,32);
+    font-size: x-large;
+    margin-right: 2px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#userEmail{
+    font-size: 19px;
+}
+#userPassword{
+    font-size: 19px;
+}
+#userNumber{
+    font-size: 19px;
+}
+#login-button{
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    font-size: .88889rem;
+    color: white;
+    background-color:rgb(255,51,153) ;
+    border: 0px;
+    cursor: pointer;
+}
