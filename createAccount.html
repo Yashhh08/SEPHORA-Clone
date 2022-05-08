@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="createAccount.css" />
+  </head>
+  <body>
+    <div class="background-body">
+      <div class="contains-form">
+        <a href="login.html">
+          <div class="previous-page">∟</div>
+        </a>
+
+        <h2 style="font-weight: 600; letter-spacing: 1px">CREATE ACCOUNT</h2>
+
+        <form id="signup_form">
+          <div class="input-label">
+            <span><label>Name*</label></span>
+          </div>
+
+          <div id="div-input-label">
+            <select id="genderSelect" class="name-field-select">
+              <option value="select-title">Select</option>
+              <option value="Mr">Mr</option>
+              <option value="Ms">Ms</option>
+            </select>
+            <input id="userName" class="input-with-select" type="text" />
+          </div>
+
+          <div class="input-label">
+            <span><label>Email*</label></span>
+          </div>
+
+          <input type="email" id="userEmail" />
+          <div class="input-label">
+            <span><label>Password*</label></span>
+          </div>
+
+          <input type="password" id="userPassword" />
+          <div class="input-label">
+            <span><label>Phone Number*</label></span>
+          </div>
+
+          <input type="number" id="userNumber" />
+
+          <div class="continue-button">
+            <div class="continue-button">
+              <a style="text-decoration: none" href="formValidation.html">
+                <input type="submit" value="CONTINUE" id="login-button" />
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var user_Data = JSON.parse(localStorage.getItem("All_data")) || [];
+
+  document.querySelector("form").addEventListener("submit", get_user_data);
+
+  function get_user_data() {
+    event.preventDefault();
+
+    var user_select = signup_form.genderSelect.value;
+
+    var user_name = signup_form.userName.value;
+
+    var user_email = signup_form.userEmail.value;
+
+    var user_password = signup_form.userPassword.value;
+
+    /*console.log(user_name,user_email,user_password)*/
+
+    var user_Obj = {
+      Name_: user_name,
+      Email_: user_email,
+      Password_: user_password,
+    };
+
+    if (user_name != "" && user_email != "" && user_password != "") {
+      user_Data.push(user_Obj);
+    }
+
+    /*console.log(data)*/
+
+    localStorage.setItem("All_data", JSON.stringify(user_Data));
+
+    if (user_name != "" && user_email != "" && user_password != "") {
+      window.location.href = "addAddress.html";
+    } else {
+      alert("Please Enter Valid Information");
+    }
+  }
+</script>

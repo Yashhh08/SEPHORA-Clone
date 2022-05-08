@@ -1,0 +1,121 @@
+.background-body{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    position: absolute;
+    /* display: none; */
+    padding: 10px;
+}
+.contains-form{
+    width:360px;
+    height: 460;
+    background-color: white;
+    border-radius:1px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+    
+
+.contains-form::-webkit-scrollbar{
+    width: 6px;
+    background-color: rgb(196, 194, 194);
+}
+.contains-form::-webkit-scrollbar-track{
+    background-color: rgb(196, 194, 194);
+}
+.contains-form::-webkit-scrollbar-thumb{
+    background-color: rgb(166, 164, 164);
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 26px;
+    color:rgb(255,51,153) ;
+    margin-top: 28px;
+    cursor: pointer;
+}
+#input-label{
+    font-weight: 100; 
+    font-size: smaller;
+    color: rgb(185, 185, 185);
+    margin-bottom: 10px;
+    text-align: left;
+}
+input{
+    
+    display: block;
+    margin: 0 auto;
+    width: 97.5%;
+    height: 31px;
+    border:2px solid rgb(234,0,32);
+    font-size: x-large;
+    margin-right: 2px;
+}
+.in-form-error-message{
+    font-size: smaller;
+    color: rgb(234,0,32);
+    text-align: left;
+    margin-top: 3px;
+    
+
+}
+.login-button{
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    font-size: .88889rem;
+    color: white;
+    background-color:rgb(255,51,153) ;
+    border: 0px;
+    cursor: pointer;
+}
+#or{
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+.social-media-link img{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+.social-media-link>div{
+    background-color: rgb(66,133,244);
+    font-size: 14px;
+    align-items: center;
+    color: white;
+    align-content: center;
+    height: 32px;
+}
+.social-media-link>div+div{
+    background-color: rgb(59,89,152);
+}
+.privacy-terms{
+    color: rgb(255,51,153);
+    
+
+}
+#social-media-link-google{
+    margin-bottom: 15px;
+}
+#social-media-link-facebook{
+    margin-bottom: 60px;
+}
+#terms-conditions{
+    font-size: smaller;
+    color: rgb(103, 101, 101);
+    margin-bottom: 50px;
+}
+
+
+
