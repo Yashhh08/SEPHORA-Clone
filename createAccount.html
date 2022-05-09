@@ -10,7 +10,7 @@
   <body>
     <div class="background-body">
       <div class="contains-form">
-        <a href="login.html">
+        <a href="homepage.html">
           <div class="previous-page">∟</div>
         </a>
 
@@ -91,7 +91,7 @@
     localStorage.setItem("All_data", JSON.stringify(user_Data));
 
     if (user_name != "" && user_email != "" && user_password != "") {
-      window.location.href = "addAddress.html";
+      window.location.href = "login.html";
     } else {
       alert("Please Enter Valid Information");
     }
