@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap");
+body {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0;
+}
+/* Dropdown Button */
+.dropbtn {
+  color: black;
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Navbar  */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 600px;
+}
+.logo {
+  margin-left: 50px;
+}
+.logo_image {
+  height: 50px;
+}
+.dropDown_catogeries i {
+  margin-right: 10px;
+}
+
+/* second Navbar */
+
+.secondNav {
+  background-color: #2ba2e4;
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+
+.secondNav > .right {
+  display: flex;
+  margin-right: 10px;
+  height: 55px;
+}
+.shipping,
+.payment {
+  display: flex;
+  width: 130px;
+  color: #1e719f;
+}
+.secondNav > .right {
+  margin-left: 450px;
+}
+.secondNav > .left {
+  margin-left: 400px;
+  color: white;
+}
+
+.navSpan {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin: 16px;
+  margin-left: 8px;
+  color: white;
+  background-color: #ff3399;
+  padding: 6px;
+  border-radius: 50%;
+  line-height: 14px;
+  font-weight: 400;
+}
+.active {
+  color: white;
+  border-bottom: 4px solid #ff3399;
+}
+.payment_detailes {
+  text-align: left;
+  display: inline-flex;
+  margin-left: auto;
+  justify-content: center;
+}
+.payment_detailes > .left {
+  padding-left: 200px;
+  width: 700px;
+}
+.f-s20 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+.total {
+  display: flex;
+}
+.form-header {
+  height: 60px;
+  padding: 20px 30px 0;
+  border-bottom: 1px solid #e1e8ee;
+}
+.payment_detailes {
+  display: flex;
+}
+
+.form-body {
+  padding: 30px 30px 20px;
+  width: 300px;
+}
+/* Common */
+.card-number,
+.cvv-input input,
+.month select,
+.year select {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 14px;
+}
+
+.card-number,
+.month select,
+.year select {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 14px;
+}
+
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month select,
+.year select {
+  opacity: 0.7;
+  color: #86939e;
+}
+
+/* Card Number */
+.card-number {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #a8a9aa;
+  padding: 10px 8px 10px 60px;
+}
+/* Date Field */
+.month select,
+.year select {
+  border: 2px solid #a8a9aa;
+  color: black;
+}
+
+.month select {
+  float: left;
+
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #a8a9aa;
+  padding: 10px 0px 10px 20px;
+}
+
+.year select {
+  float: right;
+
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #a8a9aa;
+  padding: 10px 0px 10px 20px;
+}
+
+/* Card Verification Field */
+.cvv-input input {
+  float: left;
+  width: 145px;
+  padding-left: 20px;
+  border: 2px solid #e1e8ee;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.cvv-details {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.cvv-details p {
+  margin-top: 6px;
+}
+.card-verification {
+  display: flex;
+  gap: 20px;
+  font-size: large;
+}
+.cvv_text > p {
+  margin: 10px;
+}
+.cvv_number {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid #a8a9aa;
+  padding: 10px 0px 10px 20px;
+}
+.cvv_card {
+  width: 50px;
+}
+.date-field {
+  display: flex;
+  gap: 20px;
+}
+.date_text > p {
+  margin: 0;
+  width: 70px;
+}
+.info_icon {
+  margin: 8px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Displauy none */
+
+.top_banks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.bank_card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid;
+  border-radius: 12px;
+  width: 100%;
+  height: 112px;
+  text-align: center;
+}
+.paytm_top {
+  width: 463px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paytmInput {
+  width: 250px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f3f3f3;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 8px 14px 60px;
+}
+.paytmInput:focus {
+  outline: none;
+}
+.paytm_resend {
+  color: #ff3399;
+  cursor: pointer;
+}
+.paytm_verify {
+  background-color: white;
+  border: 2px solid #a8a9aa;
+  color: #a8a9aa;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 8px 40px;
+  margin-left: 10px;
+}
+.upi {
+  display: flex;
+  margin: 20px;
+}
+.upi_id {
+  margin: 10px 0;
+  font-weight: 400;
+}
+.upi_input {
+  width: 137px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: 2px solid #a8a9aa;
+  background-color: #f3f3f3;
+  padding: 10px 0px 10px 16px;
+}
+
+.payment_detailes > .right {
+  margin-left: 80px;
+  width: 400px;
+}
+.over_view {
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin-top: 20px;
+  line-height: 15px;
+}
+.over_view p {
+  margin: 10px;
+}
+.subtotal,
+.discount,
+.gst,
+.delivery_charges,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.overview_text {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+.discount p {
+  color: #ff3399;
+}
+.place_order_btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ff3399;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+.total p {
+  font-weight: bold;
+}
+
+/* ////////////////////Shipping Page//////////////////////////// */
+
+.top_box {
+  display: flex;
+  border: 2px solid #f28216;
+  margin-top: 20px;
+  font-size: medium;
+  font-weight: 400;
+  color: #f28216;
+}
+.box_heading {
+  color: black;
+  font-weight: 700;
+}
+.top_box > .left > i {
+  font-size: 34px;
+  color: #f28216;
+  margin: 20px;
+}
+
+.address > .top {
+  display: flex;
+}
+.address > .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.address > .bottom > .left > p {
+  width: 550px;
+}
+.product_detailes {
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.product_card {
+  display: flex;
+  align-items: center;
+}
+.product_card > img {
+  height: 100px;
+}
+
+.product_card p {
+  margin: 3px;
+  font-size: 13px;
+}
+.bold {
+  font-weight: 600;
+}
+.product_detailes > .right {
+  margin-right: auto;
+  margin-left: 100px;
+}
+.btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn_div {
+  text-align: center;
+}
+.edit_bag:hover {
+  color: #ff3399;
+}
+.coupon {
+  display: flex;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.coupon > img {
+  width: 30px;
+}
+
+.coupon > p:hover {
+  color: #ff3399;
+  cursor: pointer;
+}
+.address > .top > p > span {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+  height: 100px;
+  margin-top: 195px;
+  background-color: #f2f2f2;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding-top: 20px;
+}
+.credits {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#myhr {
+  height: 40px;
+}
+.my_addresses{
+  font-size: 12px;
+  width: 700px;
+  height: 300px; display: none;
+  background-color: white;
+  z-index: 999;
+
+}
+.my_addresses > p{
+  width: 100px;
+  height: 100px;
+}
+.center {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  padding: 10px;
+  }
+
+  .address_card{
+    border: 2px solid black;
+    width:300px;
+    height: 150px;
+  }
+  .address_card > p{
+    margin: 10px;
+  }
+  .addresses{
+    display: flex;
+    gap: 30px;
+    justify-content:center ;
+  }
+  .bold{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .dummyAddress{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  .dummyAddress > p{
+    font-size: 22px;
+    margin-top: 4px;
+    cursor: pointer;
+    
+  }
+  .wrapper{
+    margin-top: 40px
+  }
+  .faded{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .close{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    color: #ff3399;
+    font-weight: 700;
+    cursor: pointer;
+  }

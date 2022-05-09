@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./CSS FILES/payment.css" />
+	<title>Payment</title>
+</head>
+
+<body>
+  <div class="container">
+	<div class="nav_wrappers">
+		<div class="nav">
+			<div class="logo"> <img class="logo_image" src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="" /> </div>
+			<div class="dropdown">
+				<button class="dropbtn">Basil</button>
+				<div class="dropdown-content"> <a class="dropDown_catogeries" href="#"><i class="fa-regular fa-user" style="color: #2ba2e4"></i
+              >Account</a
+            >
+            <a class="dropDown_catogeries" href="#"
+              ><i class="fa-regular fa-heart" style="color: #ff3399"></i
+              >Favorite</a
+            >
+            <a class="dropDown_catogeries" href="#"
+              ><i class="fas fa-box" style="color: #abc72c"></i>Orders</a
+            >
+            <hr />
+            <a class="dropDown_catogeries" href="#"
+              ><i
+                class="fa-solid fa-right-from-bracket"
+                style="color: #ff3399"
+              ></i
+              >Signt Out</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="secondNav">
+        <div class="left">
+          <h3>CHECKOUT</h3>
+        </div>
+        <div class="right">
+          <div id="shipping" class="shipping active" onclick="pagesMode(1)">
+            <span class="navSpan">1</span>
+            <h4>Shipping</h4>
+          </div>
+
+          <div id="payment" class="payment " onclick="pagesMode(2)">
+            <span class="navSpan">2</span>
+            <h4>Payment</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div  class="payment_detailes" >
+<!-- Left -->
+
+
+<div id="payment_left" class="left" style="display: none;">
+
+  <div class="total">
+
+    <h4><i class="fa-regular fa-rectangle-list"></i>TOTAL PAYABLE AMOUNT </i></h4>
+    <h4 style="margin-left: auto;">Rs. 7,800</h4>
+  
+  </div>
+
+  <div class="payment_methods">
+    <h4><i class="fa-solid fa-wallet"></i> PAYMENT METHODS</h4>
+  </div>
+
+  <hr>
+
+
+        
+  <div class="radio_wrapper">
+    <input onclick="showDiv(1)" type="radio" id="card" name="drone">
+    <label  class="f-s20 " for="huey">Credit / Debit Card</label>
+  </div>
+
+          <!-- Card -->
+          <div class="card" id="1">
+          
+            <form class="credit-card">
+              <div class="form-header">
+                <h4 class="title">Credit card detail</h4>
+              </div>
+             
+              <div class="form-body">
+                <!-- Card Number -->
+                <label for="cardNumber">Enter your card number (Visa, Mastercard, Amex)</label>
+                <input type="number" name="cardNumber" class="card-number">
+             
+                <!-- Card Name -->
+                <label for="cardName">Enter Name on Card</label>
+                <input type="text" name="cardName" class="card-number">
+            
+                    <!-- Card Verification Field -->
+                    <div class="card-verification ">
+                      <div class="cvv_text">
+                        <p>CVV</p>
+                      </div>
+                      <div class="cvv_card">
+                        <input type="text" class="cvv_number">
+                      </div>
+                      <i class="fa-solid info_icon fa-circle-info"></i>
+                    </div>
+             
+                <!-- Date Field -->
+                <div class="date-field">
+                  <div class="date_text">
+                    <p>Exp. Date</p>
+                  </div>
+                  <div class="month">
+                    <select name="Month">
+                      <option value="" disabled selected>MM</option>
+                      <option value="january">January</option>
+                      <option value="february">February</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="june">June</option>
+                      <option value="july">July</option>
+                      <option value="august">August</option>
+                      <option value="september">September</option>
+                      <option value="october">October</option>
+                      <option value="november">November</option>
+                      <option value="december">December</option>
+                    </select>
+                  </div>
+                  <div class="year">
+                    <select name="Year">
+                      <option value="" disabled selected>YYYY</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                    </select>
+                  </div>
+                </div>
+            
+                <input type="checkbox" name="save" id="">
+                <label class="checkbox" for="save">save for later</label>
+              </div>
+            </form>
+        </div>
+
+  <div>
+    <input onclick="showDiv(2)" type="radio" id="bank" name="drone" >
+    <label  class="f-s20 " for="dewey">Net Banking</label>
+  </div>
+  
+                     <!-- Bank -->
+                     <div class="banking" id="2">
+                      <p>Popular Banks</p>
+                      <div class="top_banks">
+                        <div class="bank_card">
+                          <img src="https://static.nnnow.com/client/assets/images/netbanking/axis.png" alt="">
+                          <p>AXIS</p>
+                        </div>
+                  
+                  
+                        <div class="bank_card">
+                          <img src="https://static.nnnow.com/client/assets/images/netbanking/hdfc.png" alt="">
+                          <p>HDFC</p>
+                        </div>
+                  
+                        <div class="bank_card">
+                          <img src="https://static.nnnow.com/client/assets/images/netbanking/icici.png" alt="">
+                          <p>ICIC</p>
+                        </div>
+                  
+                  
+                        <div class="bank_card">
+                          <img src="https://static.nnnow.com/client/assets/images/netbanking/sbi.png" alt="">
+                          <p>SBI</p>
+                        </div>
+                  
+                        <div class="bank_card">
+                          <img src="https://static.nnnow.com/client/assets/images/netbanking/kotak.png" alt="">
+                          <p>Kotak</p>
+                        </div>
+                      </div>
+                  
+                      <p>All Banks</p>
+                  
+                      <div class="allBanks">
+                  
+                        <!-- To be Added -->
+                  
+                        <p>You will be re-directed to a secure payment gateway</p>
+                      </div>
+                  
+                  
+                    </div>
+
+
+
+  <div>
+    <input onclick="showDiv(3)" type="radio" id="paytm" name="drone" >
+    <label  class="f-s20 " for="louie">Paytm Wallet</label>
+  </div>
+
+
+                      <!-- Paytm -->
+
+                      <div class="paytm" id="3">
+                        <div class="paytm_top">
+                          <p class="paytm_instuction">Paytm has sent an otp to 9446001964</p>
+                          <p class="paytm_resend">Resend</p>
+                        </div> 
+                        <div class="paytm_bottom">
+                         <input class="paytmInput" type="text" placeholder="Please enter OTP">
+                         <button class="paytm_verify">Verify</button>
+                        </div>
+                    
+                       </div>
+  
+  <div>
+    <input onclick="showDiv(4)" type="radio" id="wallet" name="drone" >
+    <label  class="f-s20 " for="louie">Other Wallets</label>
+  </div>
+
+                       <!-- Other Wallet -->
+                       <div class="other_wallet" id="4">
+                        <div class="top_banks">
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/Amazonpay.png" alt="">
+                            <p>Amazon Pay</p>
+                          </div>
+                    
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/phonepe.png" alt="">
+                            <p>Phone Pay</p>
+                          </div>
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/freecharge.png" alt="">
+                            <p>Freecharge Wallet</p>
+                          </div>
+                    
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/Mobikwik.png" alt="">
+                            <p>Mobikwik</p>
+                          </div>
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/airtel.png" alt="">
+                            <p>Airtel Money</p>
+                          </div>
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/olamoney.png" alt="">
+                            <p>Ola Money</p>
+                          </div>
+                    
+                          <div class="bank_card">
+                            <img src="https://static.nnnow.com/client/assets/images/razorpay/payzapp.png" alt="">
+                            <p>Payzapp</p>
+                          </div>
+                        </div>
+                      </div>
+  
+  <div>
+    <input onclick="showDiv(5)" type="radio" id="upi" name="drone" >
+    <label  class="f-s20 " for="louie">UPI</label>
+  </div>
+
+                      <!-- UPI -->
+
+                      <div  id="5">
+                        <div class="upi">
+                          <p class="upi_id">UPI ID :</p>
+                          <input class="upi_input" type="text" placeholder="example@bank">
+                        </div>
+                        </div>
+
+  
+  <div>
+    <input onclick="showDiv(6)" type="radio" id="cod" name="drone" >
+    <label  class="f-s20 "  for="louie">Pay on Delivery (UPI, Wallet, Card and Cash) <p style="color: #ff3399; font-size: 12px;display: inline-flex;">(additional charge Rs. 40)</p></label>
+  </div>
+  
+  
+  
+  
+  
+
+
+
+</div>
+
+<div id="shipping_left" class="left">
+
+
+
+  
+      <!-- Top Box -->
+  <div class="top_box">
+    <div class="left">
+      <i class="material-symbols-outlined">
+        info
+        </i>
+    </div>
+    <div class="right">
+
+      <p class="box_heading">Important !!</p>
+      <p>Dear customer, the actual delivery timelines may vary depending on the government restrictions in your location</p>
+    </div>
+    <p></p>
+  </div>
+
+<!-- Address -->
+
+<div class="address">
+  <div class="top">
+    <p>Shipping Option for <span style="color: #FF3399;">673585</span></p>
+  </div>
+  <div class="bottom">
+    <div class="left">
+      <p class="address_text">
+        5th Floor, SJR Primus, 20th Main Rd, next to Siddam Setty Complex, 5th Block, Koramangala, Bengaluru, Karnataka 560034
+      </p>
+    </div>
+    <div class="right">
+      <button id="changeNut" class="address_edit btn">CHANGE</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+<!-- Product Detailes -->
+
+<div id="product_detailes" class="product_detailes">
+  <div id="product_left"  class="left">
+  </div>
+  <div id="product_right" class="right">
+
+  </div>
+</div>
+<hr>
+<div class="btn_div">
+<button id="editBag" class="edit_bag btn">EDIT BAG</button>
+</div>
+<hr>
+
+
+
+</div>
+
+
+
+
+
+
+
+                       <!-- Right -->
+    <div class="right overview">
+      <div id="coupon" class="coupon">
+        <img src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png" alt="">
+
+        <p class="promo">APPLY PROMO CODE</p>
+      </div>
+      <div class="over_view">
+        <h5 class="overview_text">OVERVIEW</h5>
+        <div class="subtotal">
+          <p>Subtotal</p> <p id="subTotalMoney">Rs. 7,800</p>
+        </div>
+        <div class="discount">
+          <p>Discount</p> <p id="discount">Rs. 0</p>
+        </div>
+        <div class="gst">
+          <p>GST</p> <p>Rs. 0</p>
+        </div>
+        <div class="delivery_charges">
+          <p>Delivery Charges</p> <p>Rs. 0</p>
+        </div>
+  
+        <hr>
+        <div class="total">
+          <p>Total</p> <p id="totalMoney">Rs. 7,800</p>
+        </div>
+     
+      </div>
+
+      <button id="placeOrder" class="place_order_btn">PLACE ORDER</button>
+
+    </div>
+
+
+  </div>
+
+
+    <footer class="footer">
+<div class="footer_wrapper">
+  <div class="logo">
+    <img src="https://static.nnnow.com/Verified_by_Visa_logo.png" alt="">
+    <img src="https://static.nnnow.com/verified-mastercard.png" alt="">
+    <img src="https://static.nnnow.com/verified-pci.png" alt="">
+    <img src="https://static.nnnow.com/verified-pci.png" alt="">
+  </div>
+  <div class="credits">
+    <p>@2022 NNNNOW</p>
+    <hr id="myhr">
+    <p>Privacy Policy</p>
+    <hr id="myhr">
+    <p>Terms & Condition</p>
+  </div>
+</div>
+</footer>
+</div>
+
+
+
+
+    <!-- overlay -->
+    <div id="faded" class="">
+      <p></p>
+    </div>
+
+<!-- My Addresses -->
+
+<div id="my_addresses" class="center my_addresses">
+  <i id="close" class="close material-symbols-outlined">
+    close
+  </i>
+  <h3 class="bold">My Addresses</h3>
+<div  id="addresses" class="addresses">
+<div id="addAddress" class="address_card   dummyAddress" style='text-align: center;'>
+  <div class="wrapper">
+      <span class="material-symbols-outlined">
+    add
+    </span>
+    <p>Add Address</p>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+
+    
+
+
+   
+    
+
+    <script src="./JS FILES/payment.js"></script>
+  </body>
+</html>
