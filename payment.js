@@ -137,52 +137,56 @@ document.getElementById("editBag").addEventListener("click", () => {
 
 document.getElementById("placeOrder").addEventListener("click", () => {
   if (!document.getElementById("shipping").classList.contains("active")) {
-    window.location.href = "done.html";
+    alert("Order Placed Successfully..!!");
+    window.location.href = "homepage.html";
   }
 });
 
-
-
 // Addresses
 
-var col = JSON.parse(localStorage.getItem('address')) || [];
-var mainDiv = document.getElementById('addresses')
-col.forEach((el)=>{
-  var address = el.Name+', '+el.Address+', '+el.Phone+', '+el.AlternativeNumber+', '+el.Pincode+', '+el.Landmark
-  var pContainer = document.createElement('div')
-  pContainer.classList.add('address_card')
-    var p = document.createElement('p')
-    p.textContent = address
-    p.style.padding = '10px'
+var col = JSON.parse(localStorage.getItem("address")) || [];
+var mainDiv = document.getElementById("addresses");
+col.forEach((el) => {
+  var address =
+    el.Name +
+    ", " +
+    el.Address +
+    ", " +
+    el.Phone +
+    ", " +
+    el.AlternativeNumber +
+    ", " +
+    el.Pincode +
+    ", " +
+    el.Landmark;
+  var pContainer = document.createElement("div");
+  pContainer.classList.add("address_card");
+  var p = document.createElement("p");
+  p.textContent = address;
+  p.style.padding = "10px";
 
-    pContainer.append(p)
-    mainDiv.append(pContainer)
+  pContainer.append(p);
+  mainDiv.append(pContainer);
 
-  console.log(address)
-})
+  console.log(address);
+});
 
-document.getElementById('changeNut').addEventListener('click', ()=>{
- 
-  div.style.backgroundColor = 'black';
-  document.body.classList.add('.faded')
-  document.getElementById('my_addresses').style.display = 'block'
-  document.getElementById('faded').classList.add('faded')
-})
+document.getElementById("changeNut").addEventListener("click", () => {
+  div.style.backgroundColor = "black";
+  document.body.classList.add(".faded");
+  document.getElementById("my_addresses").style.display = "block";
+  document.getElementById("faded").classList.add("faded");
+});
 
-document.getElementById('close').addEventListener('click', ()=>{
- 
-  document.body.classList.remove('.faded')
-  document.getElementById('my_addresses').style.display = 'none'
-  document.getElementById('faded').classList.remove('faded')
-})
+document.getElementById("close").addEventListener("click", () => {
+  document.body.classList.remove(".faded");
+  document.getElementById("my_addresses").style.display = "none";
+  document.getElementById("faded").classList.remove("faded");
+});
 
-
-
-document.getElementById('addAddress').addEventListener('click', ()=>{
- 
-window.location.href = 'addAddress.html'
-})
-
+document.getElementById("addAddress").addEventListener("click", () => {
+  window.location.href = "addAddress.html";
+});
 
 // var user_add= JSON.parse(localStorage.getItem('address'))
 

@@ -14,8 +14,8 @@ document.querySelector('#save').addEventListener('click',(el)=>{
     col.push(obj)
     console.log(col)
     localStorage.setItem("address",JSON.stringify(col))
-    alert('Sign Up Successfull')
-    window.location.href="homepage.html"
+    
+    window.location.href="payment.html"
 });
 
 
