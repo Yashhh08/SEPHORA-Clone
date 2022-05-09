@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Address</title>
+    <style>
+        #container{
+            /* font-size: 20px; */
+            width: 65%;
+            height:500px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            margin: auto;
+        }
+        h1{
+            justify-content: center;
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;
+            
+        }
+        #House{
+            width:85%;
+            height:25px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            border-color: transparent;
+            border-radius: 0px;
+            outline: 0;
+        }
+        #tex{
+            padding-left: 30px;
+            font-family: 'Exo 2', sans-serif;
+            
+        }
+        #Name{
+            width: 85%;
+            height: 25px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            border-color: transparent;
+            border-radius: 0px;
+            outline: 0;
+        }
+        #Phone{
+            width: 40%;
+            height: 25px;
+            margin-left: 35px;
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            border-color: transparent;
+            border-radius: 0px;
+            outline: 0;
+        }
+        #Alternate{
+            width: 40%;
+            height: 25px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            border-color: transparent;
+            border-radius: 0px;
+            outline: 0;
+        }
+        #Landmark{
+            width: 38%;
+            height: 25px;
+            margin-left: 60px;
+            margin-bottom: 10px;
+            background-color: #f3f3f3;
+            border-color: transparent;
+            border-radius: 0px;
+            outline: 0;
+        }
+        
+
+        #tex1{
+
+            padding-left: 350px;
+            font-family: 'Exo 2', sans-serif;
+            font-family: Avenir-Next,sans-serif;
+
+        }
+        #Pincode{
+            width: 39%;
+            height: 25px;
+            margin-left: 30px;
+            margin-bottom: 10px;
+            border-color: transparent;
+            border-radius: 0px;
+            background-color: #f3f3f3;
+            outline: 0;
+            padding-right: -40px;
+        }
+        #con1{
+            display: flex;
+        }
+        button{
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            margin-left: 360px;
+            margin-top: 20px;
+            padding: 10px 45px 10px 45px;
+            outline: 0;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+<form id="col">
+    <div id="container">
+        <h1>Add Address</h1>
+        <p id="tex" >Name*</p>
+        <input id="Name" type="text" placeholder="Name">
+        <p id="tex" >Address*</p>
+        <input id="House" type="text" placeholder="(House/Flat No.,Building,Street,Area/Locality)">
+        <div id="con1">
+            <p id="tex" >Phone*</p>
+        <!-- <input id="box1" type="text" placeholder="Phone number"> -->
+        <p id="tex1" >Alternative Number</p>
+        <!-- <input id="box2" type="text" placeholder="Alternative number"> -->
+        </div>
+        <div>
+            <input id="Phone" type="number" placeholder="Phone number">
+            <input id="Alternate" type="number" placeholder="Alternative number">
+            
+        </div>
+        <div id="con1">
+            <p id="tex" >Pincode*</p>
+        <!-- <input id="box1" type="text" placeholder="Phone number"> -->
+        <p id="tex1" >Landmark</p>
+        <!-- <input id="box2" type="text" placeholder="Alternative number"> -->
+        </div>
+        <div>
+         <input id="Pincode" type="text" placeholder="Pincode">
+         <input id="Landmark" type="text" placeholder="Landmark">
+            
+        </div>
+       <button id="save">SAVE</button>
+ 
+    </div>
+</form>
+</body>
+</html>
+
+
+
+<script src="./JS FILES/addAddress.js"></script>
